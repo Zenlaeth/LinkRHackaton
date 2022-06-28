@@ -10,7 +10,7 @@ import com.zenlaeth.tinderpro.CvRepository.Singleton.databaseRef
 class CvRepository {
     object Singleton {
         // se connecter à la référence "cv"
-        val databaseRef = FirebaseDatabase.getInstance().getReference("articles");
+        val databaseRef = FirebaseDatabase.getInstance().getReference("cvs");
 
         // créer une liste qui va contenir nos cv
         val cvList = arrayListOf<CvModel>()

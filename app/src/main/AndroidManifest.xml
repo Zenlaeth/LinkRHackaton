@@ -46,7 +46,7 @@
         </activity>
         <activity
             android:name=".CvDetailsActivity"
-            android:label="cv details"
+            android:label="CV details"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

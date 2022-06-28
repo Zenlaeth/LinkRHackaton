@@ -61,5 +61,5 @@
         android:layout_marginLeft="@dimen/default_margin"
         android:layout_marginTop="20dp"
         android:layout_marginRight="@dimen/default_margin"
-        android:text="Add to cart" />
+        android:text="Validate" />
 </LinearLayout>
