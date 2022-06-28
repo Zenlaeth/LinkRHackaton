@@ -37,24 +37,8 @@
                 android:value=".HomeActivity" />
         </activity>
         <activity
-            android:name=".SettingsOrderActivity"
-            android:label="Order"
-            android:launchMode="singleTop">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
-        </activity>
-        <activity
             android:name=".SettingsAddressActivity"
             android:label="Address"
-            android:launchMode="singleTop">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".HomeActivity" />
-        </activity>
-        <activity
-            android:name=".SettingsPaymentActivity"
-            android:label="Payment"
             android:launchMode="singleTop">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
