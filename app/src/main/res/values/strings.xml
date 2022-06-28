@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Link R</string>
+
+    <!-- Sign up bold -->
+    <string name="no_account">Don\'t have an account? <b>Sign up</b></string>
+
+    <!-- Sign in bold -->
+    <string name="account">Have an account? <b>Sign in</b></string>
+
+    <!-- Page d'accueil - barre de recherche -->
+    <string name="bottom_home_item">Home</string>
+    <string name="bottom_explorer_item">Explorer</string>
+    <string name="bottom_settings_item">Settings</string>
+
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title">Discover</string>
+    <string name="home_page_last_article_section">Matches</string>
+
+    <!-- Page de Collection -->
+    <string name="collection_page_title">My collection</string>
+
+    <!-- Page d'ajout d'un cv -->
+    <string name="add_article_page_title">Add cv</string>
+    <string name="add_article_upload_button">Import image</string>
+    <string name="add_article_name_input">@string/item_article_name</string>
+    <string name="add_article_description_input">@string/item_article_description</string>
+    <!-- ajouter reste input (liste déroulante catégorie)-->
+
+    <string name="add_article_page_confirm_button">Confirm</string>
+
+    <!-- Fenetre page d'un cv (à voir) -->
+    <string name="article_name_item">@string/item_article_name</string>
+    <string name="article_description_label_item">Description</string>
+    <string name="article_description_subtitle_item">@string/item_article_description</string>
+
+    <!-- cv customize -->
+    <string name="item_article_name">Name</string>
+    <string name="item_article_description">Description</string>
+
+    <!-- Recherche -->
+    <string name="explorer_page_title">Search match</string>
+
+    <!-- Recherche icons -->
+    <string name="explorer_page_icon_table">Table</string>
+    <string name="explorer_page_icon_chair">Chair</string>
+    <string name="explorer_page_icon_sofa">Sofa</string>
+    <string name="explorer_page_icon_armchair">Armchair</string>
+    <string name="explorer_page_icon_desk">Desk</string>
+
+    <!-- Paramètres -->
+    <string name="settings_page_title">Settings</string>
+</resources>
