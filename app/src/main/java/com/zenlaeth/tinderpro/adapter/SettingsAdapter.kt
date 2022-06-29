@@ -10,7 +10,7 @@ import com.zenlaeth.tinderpro.R
 
 class SettingsAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<SettingsAdapter.ViewHolder>() {
     val titles = arrayOf("Profile","Address")
-    val images = arrayOf(R.drawable.ic_profile, R.drawable.ic_address)
+        val images = arrayOf(R.drawable.ic_account, R.drawable.ic_location)
 
 /*    private lateinit var mListener : onItemClickListener*/
 

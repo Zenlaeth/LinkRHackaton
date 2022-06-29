@@ -7,9 +7,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_si"
+        android:icon="@drawable/logo_hack"
         android:label="LINK R"
-        android:roundIcon="@drawable/logo_si"
+        android:roundIcon="@drawable/logo_hack"
         android:supportsRtl="true"
         android:theme="@style/Theme.TinderPro">
         <activity

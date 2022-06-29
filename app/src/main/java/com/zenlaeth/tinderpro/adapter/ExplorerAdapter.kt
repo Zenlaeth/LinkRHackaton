@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.tinderpro.R
 
 class ExplorerAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<ExplorerAdapter.ViewHolder>() {
-    val titles = arrayOf("Table", "Chair", "Sofa", "Armchair", "Desk")
-    val images = arrayOf(R.mipmap.icon_table, R.mipmap.icon_chair, R.mipmap.icon_sofa, R.mipmap.icon_armchair, R.mipmap.icon_desk)
+    val titles = arrayOf("CV", "Offers")
+    val images = arrayOf(R.drawable.ic_resume, R.drawable.ic_offer)
 
 /*    private lateinit var mListener : onItemClickListener*/
 

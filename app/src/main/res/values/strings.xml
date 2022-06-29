@@ -15,7 +15,7 @@
 
     <!-- Page d'accueil -->
     <string name="home_page_title">Discover</string>
-    <string name="home_page_last_article_section">Matches</string>
+    <string name="home_page_last_article_section">CV list</string>
 
     <!-- Page de Collection -->
     <string name="collection_page_title">My collection</string>
@@ -39,7 +39,7 @@
     <string name="item_article_description">Description</string>
 
     <!-- Recherche -->
-    <string name="explorer_page_title">Search match</string>
+    <string name="explorer_page_title">Search</string>
 
     <!-- Recherche icons -->
     <string name="explorer_page_icon_table">Table</string>
