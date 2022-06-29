@@ -20,7 +20,7 @@
         style="@style/SubtitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/item_article_name"
+        android:text="@string/item_cv_name"
         android:visibility="invisible"/>
 
     <TextView
@@ -28,7 +28,7 @@
         style="@style/DefaultTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/item_article_description"
+        android:text="@string/item_cv_description"
         android:visibility="invisible"/>
 
 </androidx.cardview.widget.CardView>

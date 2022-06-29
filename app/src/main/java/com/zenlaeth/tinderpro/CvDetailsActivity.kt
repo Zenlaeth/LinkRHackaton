@@ -4,27 +4,27 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.zenlaeth.tinderpro.adapter.ArticleAdapter
+import com.zenlaeth.tinderpro.adapter.CvAdapter
 
 class CvDetailsActivity() : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.cv_details)
 
-        /*val image = intent.getStringExtra(ArticleAdapter.ViewHolder.articleImageKey)*/
-        val imageView: ImageView = findViewById(R.id.article_image_item)
-        val textView: TextView = findViewById(R.id.article_detail_description)
-        val textView2: TextView = findViewById(R.id.article_detail_name)
+        /*val image = intent.getStringExtra(CvAdapter.ViewHolder.cvImageKey)*/
+        val imageView: ImageView = findViewById(R.id.cv_image_item)
+        val textView: TextView = findViewById(R.id.cv_detail_description)
+        val textView2: TextView = findViewById(R.id.cv_detail_name)
 
         val bundle: Bundle? = intent.extras
-        val articleImageId = bundle!!.getInt(ArticleAdapter.ViewHolder.articleImageKey)
-        val articleDescription = intent.getStringExtra(ArticleAdapter.ViewHolder.articleDescriptionKey)
-        val articleName = intent.getStringExtra(ArticleAdapter.ViewHolder.articleNameKey)
+        val cvImageId = bundle!!.getInt(CvAdapter.ViewHolder.cvImageKey)
+        val cvDescription = intent.getStringExtra(CvAdapter.ViewHolder.cvDescriptionKey)
+        val cvName = intent.getStringExtra(CvAdapter.ViewHolder.cvNameKey)
 
-        imageView.setImageResource(articleImageId)
-        textView.text = articleDescription
-        textView2.text = articleName
-        /*val articleImageItem = findViewById<ImageView>(R.id.article_image_item)
+        imageView.setImageResource(cvImageId)
+        textView.text = cvDescription
+        textView2.text = cvName
+        /*val cvImageItem = findViewById<ImageView>(R.id.cv_image_item)
 */
     }
 }

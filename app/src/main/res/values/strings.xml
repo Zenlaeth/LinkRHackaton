@@ -15,28 +15,28 @@
 
     <!-- Page d'accueil -->
     <string name="home_page_title">Discover</string>
-    <string name="home_page_last_article_section">CV list</string>
+    <string name="home_page_last_cv_section">CV list</string>
 
     <!-- Page de Collection -->
     <string name="collection_page_title">My collection</string>
 
     <!-- Page d'ajout d'un cv -->
-    <string name="add_article_page_title">Add cv</string>
-    <string name="add_article_upload_button">Import image</string>
-    <string name="add_article_name_input">@string/item_article_name</string>
-    <string name="add_article_description_input">@string/item_article_description</string>
+    <string name="add_cv_page_title">Add cv</string>
+    <string name="add_cv_upload_button">Import image</string>
+    <string name="add_cv_name_input">@string/item_cv_name</string>
+    <string name="add_cv_description_input">@string/item_cv_description</string>
     <!-- ajouter reste input (liste déroulante catégorie)-->
 
-    <string name="add_article_page_confirm_button">Confirm</string>
+    <string name="add_cv_page_confirm_button">Confirm</string>
 
     <!-- Fenetre page d'un cv (à voir) -->
-    <string name="article_name_item">@string/item_article_name</string>
-    <string name="article_description_label_item">Description</string>
-    <string name="article_description_subtitle_item">@string/item_article_description</string>
+    <string name="cv_name_item">@string/item_cv_name</string>
+    <string name="cv_description_label_item">Description</string>
+    <string name="cv_description_subtitle_item">@string/item_cv_description</string>
 
     <!-- cv customize -->
-    <string name="item_article_name">Name</string>
-    <string name="item_article_description">Description</string>
+    <string name="item_cv_name">Name</string>
+    <string name="item_cv_description">Description</string>
 
     <!-- Recherche -->
     <string name="explorer_page_title">Search</string>

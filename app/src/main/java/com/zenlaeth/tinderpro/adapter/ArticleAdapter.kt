@@ -11,29 +11,29 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.zenlaeth.tinderpro.*
 
-class ArticleAdapter(
+class CvAdapter(
     val context: HomeActivity,
     private val cvList: List<CvModel>,
     private val layoutId: Int
-) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>(){
+) : RecyclerView.Adapter<CvAdapter.ViewHolder>(){
 
     // boite pour ranger tous les composants à controler
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
-        val articleImage = view.findViewById<ImageView>(R.id.image_item)
-        val articleName:TextView? = view.findViewById(R.id.name_item)
-        val articleDescription:TextView? = view.findViewById(R.id.description_item)
+        val cvImage = view.findViewById<ImageView>(R.id.image_item)
+        val cvName:TextView? = view.findViewById(R.id.name_item)
+        val cvDescription:TextView? = view.findViewById(R.id.description_item)
 
         companion object {
-            val articleNameKey = "ARTICLE_NAME"
-            val articleImageKey = "ARTICLE_IMAGE"
-            val articleDescriptionKey = "ARTICLE_DESCRIPTION"
+            val cvNameKey = "ARTICLE_NAME"
+            val cvImageKey = "ARTICLE_IMAGE"
+            val cvDescriptionKey = "ARTICLE_DESCRIPTION"
         }
         init {
             view.setOnClickListener{
                 val intent = Intent(view.context, CvDetailsActivity::class.java)
-                intent.putExtra(articleImageKey, articleImage.toString())
-                intent.putExtra(articleDescriptionKey, articleDescription?.text)
-                intent.putExtra(articleNameKey, articleName?.text)
+                intent.putExtra(cvImageKey, cvImage.toString())
+                intent.putExtra(cvDescriptionKey, cvDescription?.text)
+                intent.putExtra(cvNameKey, cvName?.text)
                 view.context.startActivity(intent)
             }
         }
@@ -49,25 +49,25 @@ class ArticleAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         // recuperer les informations du cv
-        val currentArticle = cvList[position]
+        val currentCv = cvList[position]
 
         // recuperer le repository
         val repo = CvRepository()
 
         // utiliser glide pour recuperer l'image à partir de son lien -> composant
-        Glide.with(context).load(Uri.parse(currentArticle.imageUrl)).into(holder.articleImage)
+        Glide.with(context).load(Uri.parse(currentCv.imageUrl)).into(holder.cvImage)
 
         // mettre à jour le nom du cv
-        holder.articleName?.text = currentArticle.name
+        holder.cvName?.text = currentCv.name
 
         // mettre à jour la description du cv
-        holder.articleDescription?.text = currentArticle.description
+        holder.cvDescription?.text = currentCv.description
 
 /*        // mettre à jour l'image (intent extra)
-        holder.articleImage?.drawable */
+        holder.cvImage?.drawable */
 
         // mettre à jour l'objet cv
-        repo.updateCV(currentArticle)
+        repo.updateCV(currentCv)
     }
 
     override fun getItemCount(): Int = cvList.size

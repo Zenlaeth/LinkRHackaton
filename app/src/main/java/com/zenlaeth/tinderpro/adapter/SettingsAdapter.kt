@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.tinderpro.R
 
 class SettingsAdapter(private var mListener: onItemClickListener): RecyclerView.Adapter<SettingsAdapter.ViewHolder>() {
-    val titles = arrayOf("Profile","Address")
-        val images = arrayOf(R.drawable.ic_account, R.drawable.ic_location)
+    val titles = arrayOf("Profile","My infos")
+        val images = arrayOf(R.drawable.ic_profile_infos, R.drawable.ic_resume)
 
 /*    private lateinit var mListener : onItemClickListener*/
 

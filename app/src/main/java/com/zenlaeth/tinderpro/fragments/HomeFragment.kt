@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zenlaeth.tinderpro.CvRepository.Singleton.cvList
 import com.zenlaeth.tinderpro.HomeActivity
 import com.zenlaeth.tinderpro.R
-import com.zenlaeth.tinderpro.adapter.ArticleAdapter
-import com.zenlaeth.tinderpro.adapter.ArticleItemDecoration
+import com.zenlaeth.tinderpro.adapter.CvAdapter
+import com.zenlaeth.tinderpro.adapter.CvItemDecoration
 
 class HomeFragment(private val context: HomeActivity) : Fragment() {
 
@@ -19,12 +19,12 @@ class HomeFragment(private val context: HomeActivity) : Fragment() {
 
         // recuperer le RecycleView
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
-        horizontalRecyclerView.adapter = ArticleAdapter(context, cvList, R.layout.cv_item_horizontal)
+        horizontalRecyclerView.adapter = CvAdapter(context, cvList, R.layout.cv_item_horizontal)
 
         // recuperer le second RecycleView
         val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-        verticalRecyclerView.adapter = ArticleAdapter(context ,cvList, R.layout.cv_item_vertical)
-        verticalRecyclerView.addItemDecoration(ArticleItemDecoration())
+        verticalRecyclerView.adapter = CvAdapter(context ,cvList, R.layout.cv_item_vertical)
+        verticalRecyclerView.addItemDecoration(CvItemDecoration())
 
         return view
     }

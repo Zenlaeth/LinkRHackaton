@@ -45,7 +45,7 @@ class HomeActivity : AppCompatActivity() {
         // actualiser le titre de la page
         findViewById<TextView>(R.id.page_title).text = resources.getString(string)
 
-        // mettre à jour la liste des articles
+        // mettre à jour la liste des cvs
         repo.updateData {
             // injecter le fragment dans notre boîte (fragment_container)
             val transaction = supportFragmentManager.beginTransaction()
