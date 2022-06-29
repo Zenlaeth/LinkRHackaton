@@ -94,6 +94,41 @@
                     style="@style/DefaultTextStyle"
                     />
 
+                <TextView
+                    android:id="@+id/cv_detail_formation_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formation"
+                    android:layout_marginTop="@dimen/default_margin"
+                    style="@style/TitleTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_formation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formation"
+                    style="@style/DefaultTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_secteur_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secteur"
+                    android:layout_marginTop="@dimen/default_margin"
+                    style="@style/TitleTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_secteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Secteur"
+                    style="@style/DefaultTextStyle"
+                    />
+
+
                 <Button
                     android:id="@+id/addBCart"
                     android:layout_width="match_parent"

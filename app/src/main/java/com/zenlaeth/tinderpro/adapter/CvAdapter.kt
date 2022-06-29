@@ -24,6 +24,8 @@ class CvAdapter(
         val cvDescription:TextView? = view.findViewById(R.id.description_item)
         val cvExperience:TextView? = view.findViewById(R.id.experience_item)
         val cvLevelStudies:TextView? = view.findViewById(R.id.level_studies_item)
+        val cvFormation:TextView? = view.findViewById(R.id.formation_item)
+        val cvSecteur:TextView? = view.findViewById(R.id.secteur_item)
 
         companion object {
             val cvNameKey = "CV_NAME"
@@ -31,6 +33,8 @@ class CvAdapter(
             val cvDescriptionKey = "CV_DESCRIPTION"
             val cvExperienceKey = "CV_EXPERIENCE"
             val cvLevelStudiesKey = "CV_LEVEL_STUDIES"
+            val cvFormationKey = "CV_FORMATION"
+            val cvSecteurKey = "CV_SECTEUR"
         }
         init {
             view.setOnClickListener{
@@ -40,6 +44,8 @@ class CvAdapter(
                 intent.putExtra(cvNameKey, cvName?.text)
                 intent.putExtra(cvExperienceKey, cvExperience?.text)
                 intent.putExtra(cvLevelStudiesKey, cvLevelStudies?.text)
+                intent.putExtra(cvFormationKey, cvFormation?.text)
+                intent.putExtra(cvSecteurKey, cvSecteur?.text)
                 view.context.startActivity(intent)
             }
         }
@@ -68,6 +74,8 @@ class CvAdapter(
         holder.cvDescription?.text = currentCv.description
         holder.cvExperience?.text = currentCv.experience
         holder.cvLevelStudies?.text = currentCv.niveauEduc
+        holder.cvFormation?.text = currentCv.formation
+        holder.cvSecteur?.text = currentCv.secteur
 
 /*        // mettre à jour l'image (intent extra)
         holder.cvImage?.drawable */

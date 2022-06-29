@@ -17,6 +17,8 @@ class CvDetailsActivity() : AppCompatActivity(){
         val textCvName: TextView = findViewById(R.id.cv_detail_name)
         val textCvExperience: TextView = findViewById(R.id.cv_detail_experience)
         val textCvLevelStudies: TextView = findViewById(R.id.cv_detail_level_studies)
+        val textCvFormation: TextView = findViewById(R.id.cv_detail_formation)
+        val textCvSecteur: TextView = findViewById(R.id.cv_detail_secteur)
 
         val bundle: Bundle? = intent.extras
         val cvImageId = bundle!!.getInt(CvAdapter.ViewHolder.cvImageKey)
@@ -24,12 +26,16 @@ class CvDetailsActivity() : AppCompatActivity(){
         val cvName = intent.getStringExtra(CvAdapter.ViewHolder.cvNameKey)
         val cvExperience = intent.getStringExtra(CvAdapter.ViewHolder.cvExperienceKey)
         val cvLevelStudies = intent.getStringExtra(CvAdapter.ViewHolder.cvLevelStudiesKey)
+        val cvFormation = intent.getStringExtra(CvAdapter.ViewHolder.cvFormationKey)
+        val cvSecteur = intent.getStringExtra(CvAdapter.ViewHolder.cvSecteurKey)
 
         imageView.setImageResource(cvImageId)
         textCvDescription.text = cvDescription
         textCvName.text = cvName
         textCvExperience.text = cvExperience
         textCvLevelStudies.text = cvLevelStudies
+        textCvFormation.text = cvFormation
+        textCvSecteur.text = cvSecteur
         /*val cvImageItem = findViewById<ImageView>(R.id.cv_image_item)
 */
     }
