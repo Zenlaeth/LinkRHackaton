@@ -22,11 +22,15 @@ class CvAdapter(
         val cvImage = view.findViewById<ImageView>(R.id.image_item)
         val cvName:TextView? = view.findViewById(R.id.name_item)
         val cvDescription:TextView? = view.findViewById(R.id.description_item)
+        val cvExperience:TextView? = view.findViewById(R.id.experience_item)
+        val cvLevelStudies:TextView? = view.findViewById(R.id.level_studies_item)
 
         companion object {
-            val cvNameKey = "ARTICLE_NAME"
-            val cvImageKey = "ARTICLE_IMAGE"
-            val cvDescriptionKey = "ARTICLE_DESCRIPTION"
+            val cvNameKey = "CV_NAME"
+            val cvImageKey = "CV_IMAGE"
+            val cvDescriptionKey = "CV_DESCRIPTION"
+            val cvExperienceKey = "CV_EXPERIENCE"
+            val cvLevelStudiesKey = "CV_LEVEL_STUDIES"
         }
         init {
             view.setOnClickListener{
@@ -34,6 +38,8 @@ class CvAdapter(
                 intent.putExtra(cvImageKey, cvImage.toString())
                 intent.putExtra(cvDescriptionKey, cvDescription?.text)
                 intent.putExtra(cvNameKey, cvName?.text)
+                intent.putExtra(cvExperienceKey, cvExperience?.text)
+                intent.putExtra(cvLevelStudiesKey, cvLevelStudies?.text)
                 view.context.startActivity(intent)
             }
         }
@@ -57,11 +63,11 @@ class CvAdapter(
         // utiliser glide pour recuperer l'image à partir de son lien -> composant
         Glide.with(context).load(Uri.parse(currentCv.imageUrl)).into(holder.cvImage)
 
-        // mettre à jour le nom du cv
+        // mettre à jour les textes
         holder.cvName?.text = currentCv.name
-
-        // mettre à jour la description du cv
         holder.cvDescription?.text = currentCv.description
+        holder.cvExperience?.text = currentCv.experience
+        holder.cvLevelStudies?.text = currentCv.niveauEduc
 
 /*        // mettre à jour l'image (intent extra)
         holder.cvImage?.drawable */

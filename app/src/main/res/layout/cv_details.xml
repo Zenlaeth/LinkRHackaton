@@ -60,6 +60,40 @@
                     style="@style/DefaultTextStyle"
                     />
 
+                <TextView
+                    android:id="@+id/cv_detail_experience_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:layout_marginTop="@dimen/default_margin"
+                    style="@style/TitleTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_experience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    style="@style/DefaultTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_level_studies_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level of studies"
+                    android:layout_marginTop="@dimen/default_margin"
+                    style="@style/TitleTextStyle"
+                    />
+
+                <TextView
+                    android:id="@+id/cv_detail_level_studies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level of studies"
+                    style="@style/DefaultTextStyle"
+                    />
+
                 <Button
                     android:id="@+id/addBCart"
                     android:layout_width="match_parent"
