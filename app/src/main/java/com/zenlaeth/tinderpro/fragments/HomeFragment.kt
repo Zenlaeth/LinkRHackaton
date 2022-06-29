@@ -21,11 +21,6 @@ class HomeFragment(private val context: HomeActivity) : Fragment() {
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
         horizontalRecyclerView.adapter = CvAdapter(context, cvList, R.layout.cv_item_horizontal)
 
-        // recuperer le second RecycleView
-//        val verticalRecyclerView = view.findViewById<RecyclerView>(R.id.vertical_recycler_view)
-//        verticalRecyclerView.adapter = CvAdapter(context ,cvList, R.layout.cv_item_vertical)
-//        verticalRecyclerView.addItemDecoration(CvItemDecoration())
-
         return view
     }
 
